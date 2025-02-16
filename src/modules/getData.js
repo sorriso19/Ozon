@@ -1,7 +1,9 @@
 const getData = ( ) => {
-    return fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
-    .then(json => console.log(json))
+    return fetch('https://jsonplaceholder.typicode.com/users')
+        .then((response) => {
+            return response.json()
+        })
+    
 }
 
 export default getData
